@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoanVanHoc</title>
+</head>
+
+<body>
+    <form id="form">
+       <p>Nhap so a</p> <input type="text" id="a" autofocus placeholder="so a">
+       <p>Nhap so b</p> <input type="text" id="b" autofocus placeholder="so b">
+       <p>Tong a va b la :</p>
+        <button onclick="Tinhtong()">Tinh tong</button>
+    </form>
+    <script>
+        document.addEventListener('DomContentloaded',function() {
+        document.querySelector('#form').onsubmit = function() {
+            const name = document.querySelector('#name').value;
+            alert('Hello ${name}!');
+        };
+        });
+        function Tinhtong(){
+            var a=document.getElementById("a").value;
+            var b=document.getElementById("b").value;
+            var a1=parseFloat(a);
+            var b1=parseFloat(b);
+            alert(a1+b1);
+        }
+    </script>
+    
+</body>
+</html>
